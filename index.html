@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <title>Conor and Katie</title>
+</head>
+<body ng-app="Countdown" ng-cloak>
+
+  <div id="main" ng-controller="mainController">
+      <div id="text-overlay-container">
+        <div id="text-overlay">
+          <h1>365</h1>
+          <h3>days</h3>
+        </div>
+      </div>
+      <md-grid-list md-cols-xl="8" md-cols-lg="6" md-cols-md="4" md-cols-sm="3" md-cols-xs="3" md-gutter="15px" md-gutter-xs="0px" md-row-height="1:1">
+          <md-grid-tile ng-repeat="image in imageUrls"><img onload="" class="animated zoomIn md-whiteframe-z4" ng-src="{{ image }}"/></md-grid-tile>
+      </md-grid-list>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+  <script src="assets/js/jquery-3.1.0.js">
+
+  </script>
+
+  <script type="text/javascript" src="app/app.js"></script>
+
+</body>
+</html>

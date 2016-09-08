@@ -1,0 +1,53 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
+
+
+
+
+body {
+
+}
+#main {
+  text-align: center;
+  #text-overlay-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    // color: white;
+    z-index: 1000;
+    #text-overlay {
+      h1 {
+        // font-family: 'Open Sans', sans-serif;
+        // color: #1595A3;
+        font-weight: 500;
+        font-size: 10em;
+        color: white;
+        text-shadow: 4px 4px #EB7F00;
+        // @media and screen only (max-width: 500px){
+        //   font-size: 10em;
+        // }
+      }
+      z-index: 1000;
+    }
+  }
+  md-grid-list{
+
+    md-grid-tile {
+
+      img {
+        max-width: 100%;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+.blur {
+  -webkit-filter: blur(5px);
+  -webkit-transition : -webkit-filter 2000ms ease-in;
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
